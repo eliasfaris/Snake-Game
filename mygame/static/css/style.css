@@ -1,0 +1,26 @@
+html body{
+    background-color: #272d37;
+}
+label{
+    color: white;
+}
+h1{
+    font-family: 'Saira Stencil One', cursive;
+    color: #25D943;
+    padding-top: 50px;
+}
+
+div.form{
+    padding-left: 200px;
+    padding-top: 75px;
+}
+
+button.btn-success {
+    margin-left: 15px;
+    background-color: #25D943;
+}
+p{
+    color: white;
+}
+
+

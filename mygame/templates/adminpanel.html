@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Here are all the registered users</h1>
+    {% for user in users %}
+    <div><p>{{ user.username }}</p></div>
+    {% endfor %}
+    <form action="/adminpanel/" method="post">
+      <button name="Clear Users" type="submit"> Clear Users </button>
+{% endblock %}:w
