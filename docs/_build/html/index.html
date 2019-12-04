@@ -22,6 +22,7 @@
 
   </head><body>
 
+
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
@@ -32,23 +33,22 @@
   <div class="section" id="module-mygame.routes">
 <span id="welcome-to-snakegame-s-documentation"></span><h1>Welcome to snakegame’s documentation!<a class="headerlink" href="#module-mygame.routes" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-  <img src="webappScreenshots/topBar.jpg" alt="Nav Bar"> <!--gonna have to update this -->
-  <p> This is how users navigate through the program, they click on the</p>
-  <img src="webappScreenshots/loginPage.jpg" alt="Login Page">
-  <p> The login page where already registered users can enter their credentials to play the game </p>
-  <img src="webappScreenshots/registerPage.jpg" alt="Register Page">
-  <p> The page where new users can register their information</p>
-  <img src="webappScreenshots/color-modePicker.jpg" alt="Color/Mode Picker">
-  <p> The page where users can pick the color of the snake they want/the game mode that they want to play </p>
-  <img src="webappScreenshots/gameBoard.jpg" alt="Game Board">
-  <p> The game board where the game is played, the snake is controlled using arrow keys </p>
-  <img src="webappScreenshots/leaderboardPage.jpg" alt="Leaderboard">
-  <p> The leaderboard page where user's scores are saved </p>
-  <img src="webappScreenshots/adminPanel.jpg" alt="Admin Panel">
-  <p> The admin panel where admins can clear the database in case of emergencies </p>
-  <img src="webappScreenshots/aboutPage.jpg" alt="About Page">
-  <p> The about page where you can get to know us a bit </p>
-
+  <img src="webappScreenshots/topBar.jpg" width="400" height="40" alt="Nav Bar"> <!--gonna have to update this -->
+<p> This is how users navigate through the program, they click on the</p>
+<img src="webappScreenshots/loginPage.jpg" width="400" height="375" alt="Login Page">
+<p> The login page where already registered users can enter their credentials to play the game </p>
+<img src="webappScreenshots/registerPage.jpg" width="400" height="375" alt="Register Page">
+<p> The page where new users can register their information</p>
+<img src="webappScreenshots/color-modePicker.jpg" width="550" height="400" alt="Color/Mode Picker">
+<p> The page where users can pick the color of the snake they want/the game mode that they want to play </p>
+<img src="webappScreenshots/gameBoard.jpg" width="400" height="375" alt="Game Board">
+<p> The game board where the game is played, the snake is controlled using arrow keys </p>
+<img src="webappScreenshots/leaderboardPage.jpg" width="400" height="375" alt="Leaderboard">
+<p> The leaderboard page where user's scores are saved </p>
+<img src="webappScreenshots/adminPanel.jpg" width="400" height="375"  alt="Admin Panel">
+<p> The admin panel where admins can clear the database in case of emergencies </p>
+<img src="webappScreenshots/aboutPage.jpg" width="400" height="375" alt="About Page">
+<p> The about page where you can get to know us a bit </p>
 
 <dt id="mygame.routes.about">
 <code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">about</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.about" title="Permalink to this definition">¶</a></dt>
@@ -59,6 +59,48 @@
 <dt id="mygame.routes.admin">
 <code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">admin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.admin" title="Permalink to this definition">¶</a></dt>
 <dd><p>loads the admin panel and sends in a list of users and gives the admins the option to clear users</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminTOhelp">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminTOhelp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminTOhelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads the help page after users are cleared in admin panel</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminToColor">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminToColor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminToColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads the color/mode picker page after users are cleared in admin panel</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminToLogin">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminToLogin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminToLogin" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads login page after users are cleared in admin panel</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminToLogout">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminToLogout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminToLogout" title="Permalink to this definition">¶</a></dt>
+<dd><p>logs the user out after users are cleared in admin panel</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminToRegister">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminToRegister</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminToRegister" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads register page after users are cleared in admin panel</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminToabout">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminToabout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminToabout" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads the about page after users are cleared in admin panel</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="mygame.routes.adminToleaderboard">
+<code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">adminToleaderboard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.adminToleaderboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads the leaderboard afer users are cleared</p>
 </dd></dl>
 
 <dl class="function">
@@ -88,7 +130,7 @@
 <dl class="function">
 <dt id="mygame.routes.index">
 <code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.index" title="Permalink to this definition">¶</a></dt>
-<dd><p>loads the colorPicker as the index page</p>
+<dd><p>loads the clocker/mode picker page if the user is already logged in</p>
 </dd></dl>
 
 <dl class="function">
@@ -100,13 +142,13 @@
 <dl class="function">
 <dt id="mygame.routes.login">
 <code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.login" title="Permalink to this definition">¶</a></dt>
-<dd><p>checks if the user is alredy in the database when they enter their credentials</p>
+<dd><p>loads the login page</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="mygame.routes.logout">
 <code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.logout" title="Permalink to this definition">¶</a></dt>
-<dd><p>allows users to logout when they click the logout button</p>
+<dd><p>logs out the user</p>
 </dd></dl>
 
 <dl class="function">
