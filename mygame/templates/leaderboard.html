@@ -4,20 +4,20 @@
 
     <h1 style= "text-indent: 40px">Leaderboard</h1>
 
-		<div><p style= "text-indent: 40px">You scored <span id="result"></span> !!! </p></div>
+		<div class ="score"><p style= "text-indent: 40px">You scored <span id="result"></span>! </p></div>
 
 
     <script>
     document.getElementById("result").innerHTML=localStorage.getItem("points");
 	</script>
 
-		<button onClick="window.location.reload();">Refresh Leaderboard</button>
-
     {% for user in users %}
     <div><p style= "text-indent: 40px">{{user.username }}: Normal score: {{user.userscore}}, Hard score: {{user.hardscore}}, Black score: {{user.blackscore}}
     {% endfor %}
 	</p></div>
-
-    <a href="color">Click here to replay</a><br>
+    <div style = "position:absolute; left: 50px">
+    <a href="color">Click here to replay</a>
+    <button onClick="window.location.reload();">Refresh Leaderboard</button>
+    </div>
 
 {% endblock %}
