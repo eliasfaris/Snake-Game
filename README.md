@@ -1,8 +1,8 @@
 # Project: Snake-Game-Webapp-CMPE-131
 
-https://travis-ci.org/akumar23/Snake-Game-Webapp-CMPE-31
+[![Build Status](https://travis-ci.org/akumar23/SnakeGame.svg?branch=master)](https://travis-ci.org/akumar23/SnakeGame)
 
-Run the program by cloning the github, running 'pip install requirements.txt' (without the quotes) and executing rungame.py, then going to the link that it provides, which should be http://127.0.0.1:5000/.
+Run the program by cloning the github, running 'pip install -r requirements.txt' (without the quotes) and executing rungame.py, then going to the link that it provides, which should be http://127.0.0.1:5000/.
 
 The 8 features include:
 Allowing users to register with a unique username, allowing them to login with their registered credintials and allow them to logout from every page.
