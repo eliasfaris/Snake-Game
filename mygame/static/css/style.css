@@ -10,6 +10,24 @@ h1{
     padding-top: 50px;
 }
 
+ul{
+  font-family: 'Saira Stencil One', cursive;
+  color: #25D943;
+}
+
+body{
+  color: #25D943;
+}
+hr{
+  font-family: 'Saira Stencil One', cursive;
+  color: #25D943;
+}
+
+li{
+  font-family: 'Saira Stencil One', cursive;
+  color: #25D943;
+}
+
 div.form{
     padding-left: 200px;
     padding-top: 75px;
@@ -19,6 +37,7 @@ button.btn-success {
     margin-left: 15px;
     background-color: #25D943;
 }
+
 p{
     color: white;
 }

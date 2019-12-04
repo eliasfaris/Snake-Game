@@ -144,6 +144,10 @@ def leaderboard():
     users = User.query.all()
     return render_template('leaderboard.html', title='Leaderboard', users=users)
 
+@app.route('/admin')
+def password():
+    return render_template('password.html')
+
 @app.route('/adminpanel')
 def admin():
     """
