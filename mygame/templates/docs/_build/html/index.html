@@ -16,11 +16,41 @@
     <link rel="search" title="Search" href="search.html" />
 
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../static/css/style.css" />
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard">Leaderboard</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="documentation">Documentation/Tutorial<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="<nav-item">
+            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+          </li>
+          <!--
+         <li class="nav-item">
+            <a class="nav-link" href="adminpanel">Admin</a>
+          </li>
+        -->
+        </ul>
+      </div>
+    </nav>
 
     <div class="document">
       <div class="documentwrapper">
@@ -32,24 +62,6 @@
   <div class="section" id="module-mygame.routes">
 <span id="welcome-to-snakegame-s-documentation"></span><h1>Welcome to snakegame’s documentation!<a class="headerlink" href="#module-mygame.routes" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-  <img src="webappScreenshots/topBar.jpg" alt="Nav Bar"> <!--gonna have to update this -->
-  <p> This is how users navigate through the program, they click on the</p>
-  <img src="webappScreenshots/loginPage.jpg" alt="Login Page">
-  <p> The login page where already registered users can enter their credentials to play the game </p>
-  <img src="webappScreenshots/registerPage.jpg" alt="Register Page">
-  <p> The page where new users can register their information</p>
-  <img src="webappScreenshots/color-modePicker.jpg" alt="Color/Mode Picker">
-  <p> The page where users can pick the color of the snake they want/the game mode that they want to play </p>
-  <img src="webappScreenshots/gameBoard.jpg" alt="Game Board">
-  <p> The game board where the game is played, the snake is controlled using arrow keys </p>
-  <img src="webappScreenshots/leaderboardPage.jpg" alt="Leaderboard">
-  <p> The leaderboard page where user's scores are saved </p>
-  <img src="webappScreenshots/adminPanel.jpg" alt="Admin Panel">
-  <p> The admin panel where admins can clear the database in case of emergencies </p>
-  <img src="webappScreenshots/aboutPage.jpg" alt="About Page">
-  <p> A page where you can get to know us a bit </p>
-
-
 <dt id="mygame.routes.about">
 <code class="sig-prename descclassname">mygame.routes.</code><code class="sig-name descname">about</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mygame.routes.about" title="Permalink to this definition">¶</a></dt>
 <dd><p>loads the about page with information about the developers</p>

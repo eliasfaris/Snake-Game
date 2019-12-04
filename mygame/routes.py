@@ -18,24 +18,38 @@ program the sets up links to all the other pages on the site
 """
 
 @app.route('/')
-@app.route('/homePage')
-@app.route('/logout')
-def homePage():
-    """
-    loads the colorPicker as the index page
-    """
-
-    return render_template('homePage.html')
-
 @app.route('/color')
 @login_required
 def index():
+
+    """
+    loads the clocker/mode picker page if the user is already logged in
+    """
+
     return render_template('colorPicker.html')
+
+@app.route('/help')
+def help():
+    return render_template('help.html')
+
+@app.route('/documentation')
+def documentation():
+
+    """
+    loads the documentation page
+    """
+
+    return render_template('/docs/_build/html/index.html')
+
+@app.route('/search')
+def search():
+    return render_template('/doc/_build/html/search.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+
     """
-    checks if the user is alredy in the database when they enter their credentials
+    loads the login page
     """
 
     if current_user.is_authenticated:
@@ -61,11 +75,11 @@ def login():
 @app.route('/logout')
 def logout():
     """
-    allows users to logout when they click the logout button
+    logs out the user
     """
 
     logout_user()
-    return redirect(url_for('homePage'))
+    return redirect(url_for('index'))
 
 
 @app.route('/register', methods=['GET', 'POST'])
