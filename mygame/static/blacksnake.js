@@ -10,14 +10,6 @@ const box = 32;
 const ground = new Image();
 ground.src = "/static/gameboard.png";
 
-//variables for the arrow keys, if snake died, and if the snake ate the food
-let dead;
-let eat;
-let up;
-let right;
-let left;
-let down;
-
 
 // create the snake
 //snake must be an array in order to track the amount of food & if hit itself
