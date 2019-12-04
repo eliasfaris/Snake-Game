@@ -71,7 +71,6 @@ def login():
         return redirect(next_page)
     return render_template('login.html', title='Sign in', form=form)
 
-
 @app.route('/logout')
 def logout():
     """
@@ -80,7 +79,6 @@ def logout():
 
     logout_user()
     return redirect(url_for('index'))
-
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
