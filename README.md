@@ -1,6 +1,6 @@
 # Project: Snake-Game-Webapp-CMPE-131
 
-https://travis-ci.org/akumar23/Snake-Game-Webapp-CMPE-31
+[![Build Status](https://travis-ci.org/akumar23/SnakeGame.svg?branch=master)](https://travis-ci.org/akumar23/SnakeGame)
 
 Run the program by cloning the github, running 'pip install requirements.txt' (without the quotes) and executing rungame.py, then going to the link that it provides, which should be http://127.0.0.1:5000/.
 
