@@ -7,7 +7,7 @@ from flask_login import UserMixin
 """
 models.py
 =======================================
-sets the data base coloumns for the user2
+sets the data base coloumns for the user
 """
 
 class User(UserMixin, db.Model):
