@@ -1,8 +1,6 @@
 import pytest
 import os
 
-
-
 TESTDB = 'test_app.db'
 TESTDB_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), TESTDB)
 TESTDB_URI = 'sqlite:///' + TESTDB_PATH

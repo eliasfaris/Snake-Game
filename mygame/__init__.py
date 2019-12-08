@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 db = SQLAlchemy(app)
-
+login_manager = LoginManager()
 login = LoginManager(app)
 # right side is the function that's called to login users
 login.login_view = 'login'
@@ -35,7 +35,7 @@ def create_app(test_config=None):
 
     # here are all the pieces of my program
     with app.app_context():
-        from . import routes
+        from mygame import routes
         db.create_all()
 
     return app
