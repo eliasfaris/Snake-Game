@@ -1,6 +1,8 @@
 import pytest
 from mygame.models import User
 
+#tests that scores are saved correctly 
+
 @pytest.fixture(scope='module')
 def new_user():
     user = User(username='user', password_hash='asdf', blackscore=5, userscore=6, hardscore =10)

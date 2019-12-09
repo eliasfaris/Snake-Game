@@ -6,6 +6,8 @@ The web app is live right now at: https://snake-webapp.herokuapp.com/
 
 Doc files can be found in the docs folder, under _build then _html then open index.html. It can only be opened after cloning the repo.
 
+The tests are in the tests folder and can be run using the command python -m pytest 
+
 The 12 features include:
 
 Feature 1: Allowing users to register with a unique username
