@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div style = "position:absolute; left: 50px">
     <h1>Register</h1>
+
+
     <form action="" method="post">
         {{ form.hidden_tag() }}
         <p>
@@ -29,4 +32,5 @@
         </p>
         <p>{{ form.submit() }}</p>
     </form>
+    </div>
 {% endblock %}
