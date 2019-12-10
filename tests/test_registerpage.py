@@ -11,10 +11,9 @@ def test_valid_register(client, db):
                                 data=dict(username='testing', password_hash='testing'),
                                 follow_redirects=True)
     assert response.status_code == 200
-    #print (response.data)
-    #assert b"Congratulations, you are now a registered user!" in response.data
-    #assert b'Hi !' in response.data
-    #assert b'Log out' in response.data
+    assert b'Username' in response.data
+    assert b'Password' in response.data
+    assert b'Repeat Password' in response.data
 
 @pytest.fixture
 def client():
