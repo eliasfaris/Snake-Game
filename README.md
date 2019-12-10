@@ -8,6 +8,8 @@ Doc files can be found in the docs folder, under _build then _html then open ind
 
 The tests are in the tests folder and can be run using the command python -m pytest 
 
+To run the project after cloning, make sure to install requirements by using 'pip install -r requirements.txt' (without quotes) first then running rungame.py with python. 
+
 The 12 features include:
 
 Feature 1: Allowing users to register with a unique username
