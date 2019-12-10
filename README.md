@@ -28,6 +28,8 @@ Feature 8: Saving the users score in a leaderboard and having that page be acces
 
 Feature 9: Letting users click a 'replay game' link from the leaderboard page and sending them back to the color picker page to replay the game
 
-Feature 10: Letting Admins access an adminpanel by going to https://snake-webapp.herokuapp.com/admin, clicking enter, and entering 'letmein' and then there's a button that'll clear the database of all users in case of emergencies.
+Feature 10: Letting Admins access an adminpanel by going to https://snake-webapp.herokuapp.com/admin, clicking 'Enter Protected Area', and entering 'letmein' in the text box that pops up
 
-Features 11 and 12: We also worked on css to make the site have a uniform design and look clean. It was also used to shift text over and make some of it more visible
+Featyure 11: Once on the Admin page, there's a button that'll clear the database of all users in case of emergencies.
+
+Features 12 and 13: We also worked on css to make the site have a uniform design and look clean. It was also used to shift text over and make some of it more visible as well as moving the gameboard more to the center and making the hard game mode fit better on smaller screens.
